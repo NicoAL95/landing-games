@@ -5,7 +5,11 @@
 @layer components{
 
     .headerFilter{
-        @apply absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.4]
+        @apply absolute left-0 top-0 w-full bg-black opacity-[0.4]
+    }
+
+    .miniSliderItem{
+        @apply relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out w-[110px] h-[110px] mid:w-[117px] mid:h-[117px] big:w-[135px] big:h-[135px]
     }
 
 }

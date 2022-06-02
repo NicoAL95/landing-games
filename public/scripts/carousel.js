@@ -1,36 +1,31 @@
 $(document).ready(function(){
 
-    const cardCarousel = $("#cardCarousel");
+    const cardCarousel = $("#gameSlider");
         // Carousel Hero
         cardCarousel.owlCarousel({
             smartSpeed:450,
-            loop:false,
-            margin:24,
+            loop:true,
+            margin: 11,
             nav:false,
             dots: false,
-            autoplay:false,
+            autoplay:true,
             autoWidth: true,
-            items: 1,
-            lazyLoad: true,
-
-
             
             autoplayTimeout:7000,
             autoplayHoverPause:false,
             animateOut: 'fadeOut',
             responsive:{
-                0:{
-                    items:1
+                756:{
+                    items: 4
+                },
+                964:{
+                    items: 5
+                },
+                1150:{
+                    items:6
                 }
             }
         });
-
-    var active = cardCarousel.find(".owl-item");
-    // console.log(active);
-    
-    if ($(active[0]).hasClass("active")) {
-        $(active[0]).addClass('geser');
-    }
         
     });
 

@@ -6,9 +6,18 @@ module.exports = {
         '1/2': '50%',
         full: '100%',
       },
+      screens: {
+        'low': '700px',
+        'mid': '800px',
+        'big': '1025px',
+        'lx': '1150px',
+      }
     },
     fontFamily: {
       'mainFont': 'Montserrat',
+    },
+    screens: {
+      'lg': '1025px',
     }
   },
   corePlugins: {
