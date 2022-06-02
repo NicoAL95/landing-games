@@ -5,38 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tailwindout.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>PS5</title>
+    <title>WeekGamez</title>
 </head>
 <body>
     <section class="mainSection relative">
 
-        <!-- Image Background -->
-        <div class="pageWrapper h-screen absolute w-full top-0 left-0 -z-10">
-            
-            <!-- Background Image -->
-            <div class="bg-Image w-full h-full relative">
-                
-                <!-- Layer Black -->
-                <div class="headerFilter"></div>
-                <!-- End Layer Black -->
-
-                <!-- <img src="https://www.mobygames.com/images/promo/original/1480790256-1742853594.jpg" class="object-cover h-full w-full" alt=""> -->
-                <img src="https://i0.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2020/11/spiderman-Playstation.jpg?fit=1280%2C720&ssl=1" class="object-cover h-full w-full" alt="">
-            </div>
-            <!-- End Background Image -->
-
-        </div>
-        <!-- End Image Background -->
-
-        <header class="px-[90px] py-[40px]">
+        <header class="px-[90px] py-[40px] mb-11">
             <div class="grid grid-rows-1 grid-cols-2">
                 <div class="col-span-1">
                     <div class="profileWrapper flex items-center">
                         <div class="profileImage w-[45px] h-auto">
-                            <img src="./img/Nico-Pixel-Black.png" class="object-cover w-full h-full rounded-full" alt="">
+                            <img src="./img/Nico-Pixel-Black.png" class="w-full object-cover object-center h-full rounded-full" alt="">
                         </div>
                         <div class="profileData flex-col pl-4">
                             <div class="nameStatus flex items-end">
@@ -53,36 +41,87 @@
                     </div>
                 </div>
                 <div class="col-span-1">
-                    <h1 class="bg-red-500">Right Item</h1>
+                    <div class="flex h-full items-center justify-end">
+                        <div class="notification text-gray-50 hover:cursor-pointer flex items-center mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                              </svg>
+                              <h1 class="rounded-full text-[10px] bg-gray-50 text-black py-[2px] px-[7px] font-mainFont font-[600]">3</h1>
+                        </div>
+                        
+                        <div class="trophy flex item-center text-gray-50">
+                            <svg class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 4.21833V2.5H5.00002V4.21833H1.66669V6.66667C1.66669 8.77083 3.24085 10.4983 5.27002 10.7767C5.56067 11.629 6.07619 12.387 6.76209 12.9705C7.44799 13.554 8.27879 13.9414 9.16669 14.0917V15C9.16669 15.442 8.99109 15.866 8.67853 16.1785C8.36597 16.4911 7.94205 16.6667 7.50002 16.6667H6.66669V18.3333H13.3334V16.6667H12.5C12.058 16.6667 11.6341 16.4911 11.3215 16.1785C11.0089 15.866 10.8334 15.442 10.8334 15V14.0917C11.7213 13.9414 12.5521 13.554 13.238 12.9705C13.9239 12.387 14.4394 11.629 14.73 10.7767C16.7592 10.4983 18.3334 8.77083 18.3334 6.66667V4.21833H15ZM3.33335 6.66667V5.885H5.00002V9.02333C4.51293 8.8506 4.09124 8.53135 3.79283 8.1094C3.49441 7.68745 3.33391 7.18348 3.33335 6.66667ZM16.6667 6.66667C16.6661 7.18356 16.5055 7.68761 16.2072 8.10968C15.9088 8.53175 15.4871 8.85118 15 9.02417V5.885H16.6667V6.66667Z" fill="currenColor"/>
+                                </svg>
+                                
+                                <div class="flex h-full item-center bg-[#DA8100] px-2 py-[2px] rounded-xl mt-[6px] justify-between text-gray-50">
+                                    <svg width="15" height="15" viewBox="0 0 39 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M34.5858 13.4481L24.9158 12.0428L20.593 3.2792C20.475 3.03926 20.2807 2.84502 20.0408 2.72696C19.439 2.42988 18.7078 2.67744 18.4069 3.2792L14.0842 12.0428L4.41413 13.4481C4.14753 13.4862 3.90378 13.6119 3.71716 13.8023C3.49155 14.0342 3.36722 14.3462 3.37151 14.6697C3.37579 14.9932 3.50833 15.3018 3.74001 15.5276L10.7364 22.3488L9.08347 31.9808C9.04471 32.2048 9.0695 32.4353 9.15504 32.6459C9.24058 32.8566 9.38344 33.0391 9.56742 33.1728C9.7514 33.3064 9.96915 33.3858 10.196 33.402C10.4228 33.4181 10.6496 33.3704 10.8507 33.2643L19.5 28.7168L28.1493 33.2643C28.3854 33.3899 28.6596 33.4318 28.9224 33.3861C29.5851 33.2719 30.0307 32.6435 29.9165 31.9808L28.2635 22.3488L35.2599 15.5276C35.4504 15.341 35.576 15.0973 35.6141 14.8307C35.717 14.1642 35.2523 13.5472 34.5858 13.4481V13.4481Z"/>
+                                        </svg>
+                                        <h6 class="ml-1 text-[12px] font-mainFont">10</h6>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main>
+
+            <!-- Image Background -->
+            <div class="pageWrapper h-screen absolute w-full top-0 left-0 -z-10">
+                
+                <!-- Background Image -->
+                <div class="bg-Image w-full h-full relative">
+                    
+                    <!-- Layer Black -->
+                    <div class="headerFilter"></div>
+                    <!-- End Layer Black -->
+    
+                    <!-- <img src="https://www.mobygames.com/images/promo/original/1480790256-1742853594.jpg" class="object-cover h-full w-full" alt=""> -->
+                    <!-- <img src="https://i0.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2020/11/spiderman-Playstation.jpg?fit=1280%2C720&ssl=1" class="object-cover h-full w-full" alt=""> -->
+                    <img src="https://conocedores.com/wp-content/uploads/2022/03/halo-streaming-paramount-plus-26032022in1.webp" class="object-cover h-full w-full" alt="">
+                </div>
+                <!-- End Background Image -->
+    
+            </div>
+            <!-- End Image Background -->
+
             <section class="px-[90px]">
                 <div class="mainGameWrapper grid grid-rows-1 grid-cols-12 gap-8">
-                    <div class="activeGame col-span-3 bg-red-500">
-                        <div class="imgWrapper w-full h-full">
-                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" class="object-cover w-full h-full" alt="">
+                    <div class="activeGame col-span-3 bg-black">
+                        <div class="imgWrapper aspect-w-1 aspect-h-1 opacity-[0.85] hover:opacity-[1] hover:outline hover:outline-offset-4 hover:outline-3 hover:outline-indigo-500/100 hover:cursor-pointer">
+                            <!--  <img src="https://img.tek.id/img/content/2022/02/18/49323/late-review-halo-infinite-nostalgia-yang-terbayar-lunas-FrHszG9Whq.jpg" class="w-full object-cover object-center" alt="">-->
+                            <!-- <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" class="object-cover object-center" alt=""> -->
+                            <img src="https://img.tek.id/img/content/2022/02/18/49323/late-review-halo-infinite-nostalgia-yang-terbayar-lunas-FrHszG9Whq.jpg" class="object-cover object-center" alt="">
                         </div>
                     </div>
                     <div class="col-span-9 relative">
                         <div class="imgMiniWrapper">
-                            <div class="flex space-x-4 absolute bottom-0 left-0">
-                                <div class="imgContent">
-                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="object-cover w-full h-full" alt="">
+                            <div class="flex space-x-4 absolute bottom-0 left-0 h-1/2">
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://asset.kompas.com/crops/WIXPbodvnFL3PfpDD4ddGvcs6OQ=/62x0:737x450/750x500/data/photo/2020/11/25/5fbe0b7258d5c.jpeg" class="w-full object-cover object-center h-full" alt="">
                                 </div>
-                                <div class="imgContent">
-                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="object-cover w-full h-full" alt="">
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" class="w-full object-cover object-center h-full" alt="">
                                 </div>
-                                <div class="imgContent">
-                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="object-cover w-full h-full" alt="">
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://image.api.playstation.com/cdn/UP1004/CUSA00419_00/fd8W1NzjmglT8LxNrKdBE6C4m3PfuHqOcn6E5FRTRhWbfjBfme4WqHqud1iG6PRF.png" class="w-full object-cover object-center h-full" alt="">
                                 </div>
-                                <div class="imgContent">
-                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="object-cover w-full h-full" alt="">
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://cdn1.epicgames.com/offer/0a9e3c5ab6684506bd624a849ca0cf39/EGS_DeathStrandingDirectorsCut_KOJIMAPRODUCTIONS_S3_2560x1440-fe4e51f1801fba36e452aa3466625789" class="w-full object-cover object-center h-full" alt="">
                                 </div>
-                                <div class="imgContent">
-                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="object-cover w-full h-full" alt="">
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png" class="w-full object-cover object-center h-full" alt="">
+                                </div>
+                                <div class="imgContent w-full relative hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] transition ease-in-out">
+                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
+                                    <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="w-full object-cover object-center h-full" alt="">
                                 </div>
                             </div>
                         </div>
@@ -93,44 +132,43 @@
             <!-- My Games -->
             <section class="px-[90px] mt-8">
                 <div class="myGamesWrapper grid grid-rows-1 grid-cols-12 gap-8">
-                    <div class="col-span-3 text-gray-50">
-                        <div class="myAppsMore w-full h-[130px] bg-zinc-800 flex relative">
-                            <!-- 
-                            <div class="appIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                  </svg>
+                    <div class="col-span-3 text-gray-50 bg-black">
+                        <div class="myAppsMore w-full h-[130px] bg-zinc-800 flex justify-center text-center items-center opacity-[0.7] hover:opacity-[1] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer">
+                            <div>
+                                <div class="appIcon flex justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                                      </svg>
+                                </div>
+                                <div class="contentTitle">
+                                    <h1 class="font-mainFont uppercase mt-1 font-[500]">My games & apps</h1>
+                                </div>
                             </div>
-                        -->
-                            <div class="contentTitle absolute bottom-0 left-0 p-4">
-                                <h1 class="font-mainFont">My games & apps</h1>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-span-9">
                         <div class="appWrapper flex space-x-4">
-                            <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl">
-                                <div class="imageCard w-full h-full relative">
-                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.4] transition ease-in-out"></div>
-                                    <img src="https://i.guim.co.uk/img/media/2a10ab815d5373e3ab61d99c66e9b4e3f0c494b8/240_0_3600_2160/master/3600.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=0a454146f51db4b2414ce1703cd2dc0f" class="w-full h-full object-cover" alt="">
-                                </div>
-                                <div class="contentTitle absolute bottom-0 left-0 p-4 z-10">
-                                    <h1 class="capitalize font-mainFont text-white font-[600] text-md">2 friends playing</h1>
-                                    <h2 class="capitalize font-mainFont text-white font-[400] text-sm">ori and the will of the wisps</h2>
-                                </div>
-                            </div>
-                            <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl">
-                                <div class="imageCard w-full h-full relative">
-                                    <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.4] transition ease-in-out"></div>
-                                    <img src="https://cdn.gears5.com/media/sites/6/2020/07/operation-4-brothers-in-arms-wallpaper-standard-2058x1440-5f0f70327d12f.jpg" class="w-full h-full object-cover" alt="">
-                                </div>
-                                <div class="contentTitle absolute bottom-0 left-0 p-4 z-10">
-                                    <h1 class="capitalize font-mainFont text-white font-[300] text-md">Play Gears 5 Now</h1>
+                            <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl bg-black">
+                                <div class="imageCard w-full h-full relative opacity-[0.7] hover:opacity-[1] hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200">
+                                    <img src="https://www.project-conquerors.com/wp-content/uploads/2018/08/the-witcher-3-wild-hunt-photo-1026178.jpg" class="w-full h-full object-cover" alt="">
+                                    <div class="contentTitle absolute bottom-0 left-0 p-4">
+                                        <h1 class="capitalize font-mainFont text-white font-[600] text-md drop-shadow-md">2 friends playing</h1>
+                                    <h2 class="capitalize font-mainFont text-white font-[400] text-sm">The Witcher 3: Wild Hunt GOTY</h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="myAppsMore w-full h-[130px] bg-zinc-800 flex relative">
-                                <div class="contentTitle absolute bottom-0 left-0 p-4">
-                                    <h1 class="font-mainFont">My games & apps</h1>
+                            <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl bg-black">
+                                <div class="imageCard w-full h-full relative opacity-[0.7] hover:opacity-[1] hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200">
+                                    <img src="https://idlegionoob.com/wp-content/uploads/2022/03/maxresdefaultwewqewq-1.jpg" class="w-full h-full object-cover" alt="">
+                                    <div class="contentTitle absolute bottom-0 left-0 p-4">
+                                        <h1 class="font-mainFont text-white font-[500] text-md uppercase">Watch Now</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl bg-black">
+                                <div class="imageCard w-full h-full relative opacity-[0.7] hover:opacity-[1] hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BODk4ZThiZTctZWNiYy00N2Y0LWFjMGQtYmFkZjM2Nzk3ZDRhXkEyXkFqcGdeQXVyNTI1MDU0MzM@._V1_.jpg" class="w-full h-full object-cover" alt="">
                                 </div>
                             </div>
                         </div>
@@ -142,5 +180,19 @@
         </main>
 
     </section>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous">
+    </script>
+
+    <!-- Owl Script -->
+    <script src="./scripts/carousel.js"></script>
+
+    <!-- Custom Script -->
+    <script src="./scripts/custom.js"></script>
+
 </body>
 </html>
