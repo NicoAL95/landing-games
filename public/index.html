@@ -67,6 +67,13 @@
             </div>
         </header>
 
+        <div class="hidden">
+            <audio loop autoplay>
+                <source src="./pstheme.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+
         <!-- Image Background -->
         <div class="pageWrapper h-full absolute w-full top-0 left-0 -z-10" style="min-height: 100vh;">
                 
@@ -79,7 +86,7 @@
 
                 <!-- <img src="https://www.mobygames.com/images/promo/original/1480790256-1742853594.jpg" class="object-cover h-full w-full" alt=""> -->
                 <!-- <img src="https://i0.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2020/11/spiderman-Playstation.jpg?fit=1280%2C720&ssl=1" class="object-cover h-full w-full" alt=""> -->
-                <img src="https://i1.wp.com/d1lss44hh2trtw.cloudfront.net/assets/article/2022/04/18/fade-valorant_feature.jpg" class="object-cover object-center h-auto w-full" alt="" style="min-height: 100%;">
+                <img src="https://i1.wp.com/d1lss44hh2trtw.cloudfront.net/assets/article/2022/04/18/fade-valorant_feature.jpg" class="object-cover object-center h-auto w-full" alt="" style="min-height: 100%;" id="bgImage">
             </div>
             <!-- End Background Image -->
 
@@ -117,7 +124,7 @@
                             <!--  <img src="https://img.tek.id/img/content/2022/02/18/49323/late-review-halo-infinite-nostalgia-yang-terbayar-lunas-FrHszG9Whq.jpg" class="w-full object-cover object-center" alt="">-->
                             <!-- <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" class="object-cover object-center" alt=""> -->
                             <!--<img src="https://img.tek.id/img/content/2022/02/18/49323/late-review-halo-infinite-nostalgia-yang-terbayar-lunas-FrHszG9Whq.jpg" class="object-cover object-center" alt="">-->
-                            <img src="https://i.pinimg.com/originals/29/bc/1b/29bc1b0a474dc82a57685d02a56c9bdb.jpg" class="object-cover object-center" alt="">
+                            <img src="https://i.pinimg.com/originals/29/bc/1b/29bc1b0a474dc82a57685d02a56c9bdb.jpg" class="object-cover object-center" alt="" id="mainSquare">
                         </div>
                     </div>
                     <div class="col-span-12 low:col-span-7 mid:col-span-8 lx:col-span-9 relative">
@@ -126,64 +133,64 @@
 
                                 <div class="owl-carousel" id="gameSlider">
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" id="mini" data-image="./img/bg/cyberPunkBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://asset.kompas.com/crops/WIXPbodvnFL3PfpDD4ddGvcs6OQ=/62x0:737x450/750x500/data/photo/2020/11/25/5fbe0b7258d5c.jpeg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/cyberPunk.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/spidermanBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/spidermanCover.png" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/gtaBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://image.api.playstation.com/cdn/UP1004/CUSA00419_00/fd8W1NzjmglT8LxNrKdBE6C4m3PfuHqOcn6E5FRTRhWbfjBfme4WqHqud1iG6PRF.png" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/gtaCover.png" class="w-full object-cover object-center h-full" alt="">
                                     </div>
     
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/deathBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://cdn1.epicgames.com/offer/0a9e3c5ab6684506bd624a849ca0cf39/EGS_DeathStrandingDirectorsCut_KOJIMAPRODUCTIONS_S3_2560x1440-fe4e51f1801fba36e452aa3466625789" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/deathCover.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
     
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/fifaBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/fifaCover.png" class="w-full object-cover object-center h-full" alt="">
                                     </div>
     
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/forzaBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/08/ForzaHorizon5_KeyArt_Square_RGB_Final.jpg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/forzaCover.png" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/codBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://images.pushsquare.com/e2683c5e7a8ef/call-of-duty-warzone-ps5-version.900x.jpg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/codCover.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/wrcBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://www.mobygames.com/images/covers/l/682691-wrc-9-playstation-4-front-cover.png" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/wrcCover.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/battleBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://cdn.medcom.id/images/content/2021/07/04/1295981/rcRyZTjt8z.jpg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/battleCover.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/guardianBG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/0215/Pw9cWnyqkix3EoCOGqrN1cgN.png" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/guardianCover.png" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/nbaBG.png">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1822/YsOJjjnoruH9gzwXgwgdFFnQ.jpg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/nbaCOver.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
-                                    <div class="miniSliderItem">
+                                    <div class="miniSliderItem" data-image="./img/bg/f1BG.jpg">
                                         <div class="absolute left-0 top-0 w-[100%] h-[100%] bg-black opacity-[0.3] hover:opacity-[0.1] transition ease-in-out z-30"></div>
-                                        <img src="https://www.adnkronos.com/resources/0275-150ee098461d-53b3b5c26f5d-1000/f1_22_standard_edition_1_.jpg" class="w-full object-cover object-center h-full" alt="">
+                                        <img src="./img/cover/f1Cover.jpg" class="w-full object-cover object-center h-full" alt="">
                                     </div>
 
                                 </div>
