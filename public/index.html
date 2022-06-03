@@ -20,10 +20,10 @@
 <body style="min-height: 100vh;">
     <section class="mainSection relative" style="min-height: 100%;">
 
-        <header class="px-[90px] py-[40px] mb-11">
-            <div class="grid grid-rows-1 grid-cols-2">
-                <div class="col-span-1">
-                    <div class="profileWrapper flex items-center">
+        <header class="px-[20px] slow:px-[50px] glow:px-[90px] py-[40px] mb-11">
+            <div class="grid grid-rows-2 glow:grid-rows-1 grid-cols-2">
+                <div class="col-span-2 glow:col-span-1">
+                    <div class="profileWrapper flex items-center justify-center mb-4 glow:mb-0 glow:justify-start">
                         <div class="profileImage w-[45px] h-auto">
                             <img src="./img/Nico-Pixel-Black.png" class="w-full object-cover object-center h-full rounded-full" alt="">
                         </div>
@@ -41,8 +41,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1">
-                    <div class="flex h-full items-center justify-end">
+                <div class="col-span-2 glow:col-span-1">
+                    <div class="flex h-full items-center justify-center glow:justify-end">
                         <div class="notification text-gray-50 hover:cursor-pointer flex items-center mr-5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
@@ -110,7 +110,7 @@
             </section>
         -->
 
-            <section class="px-[90px]">
+            <section class="px-[20px] slow:px-[50px] glow:px-[90px]">
                 <div class="mainGameWrapper grid grid-rows-1 grid-cols-12 gap-8">
                     <div class="activeGame col-span-12 low:col-span-5 mid:col-span-4 lx:col-span-3 bg-black">
                         <div class="imgWrapper aspect-w-1 aspect-h-1 opacity-[0.85] hover:opacity-[1] hover:outline hover:outline-offset-4 hover:outline-3 hover:outline-indigo-500/100 hover:cursor-pointer">
@@ -195,9 +195,9 @@
             </section>
 
             <!-- My Games -->
-            <section class="px-[90px] mt-8">
-                <div class="myGamesWrapper grid grid-rows-1 grid-cols-12 gap-8">
-                    <div class="col-span-3 text-gray-50 bg-black">
+            <section class="px-[20px] slow:px-[50px] glow:px-[90px] mt-8">
+                <div class="myGamesWrapper grid big:grid-rows-1 grid-cols-12 gap-8">
+                    <div class="row-start-2 col-span-12 big:row-start-1 big:col-span-3 text-gray-50 bg-black">
                         <div class="myAppsMore w-full h-[130px] bg-zinc-800 flex justify-center text-center items-center opacity-[0.7] hover:opacity-[1] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200 hover:cursor-pointer">
                             <div>
                                 <div class="appIcon flex justify-center">
@@ -212,14 +212,14 @@
                             
                         </div>
                     </div>
-                    <div class="col-span-9">
-                        <div class="appWrapper flex space-x-4">
+                    <div class="row-start-1 col-span-12 big:row-start-1 big:col-span-9">
+                        <div class="appWrapper flex flex-col space-y-4 mlow:flex-row mlow:space-y-0 mlow:space-x-4">
                             <div class="myAppsMore w-full h-[130px] flex relative hover:cursor-pointer drop-shadow-xl bg-black">
                                 <div class="imageCard w-full h-full relative opacity-[0.7] hover:opacity-[1] hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200">
                                     <img src="https://www.project-conquerors.com/wp-content/uploads/2018/08/the-witcher-3-wild-hunt-photo-1026178.jpg" class="w-full h-full object-cover" alt="">
                                     <div class="contentTitle absolute bottom-0 left-0 p-4">
-                                        <h1 class="capitalize font-mainFont text-white font-[600] text-md drop-shadow-md">2 friends playing</h1>
-                                    <h2 class="capitalize font-mainFont text-white font-[400] text-sm">The Witcher 3: Wild Hunt GOTY</h2>
+                                        <h1 class="capitalize font-mainFont text-white font-[600] text-sm hlow:text-[16px] drop-shadow-md">2 friends playing</h1>
+                                    <h2 class="capitalize font-mainFont text-white  font-[400] text-[12px] hlow:text-sm">The Witcher 3: Wild Hunt GOTY</h2>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +227,7 @@
                                 <div class="imageCard w-full h-full relative opacity-[0.7] hover:opacity-[1] hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.70)] hover:outline hover:outline-offset-4 hover:outline-1 hover:outline-gray-200">
                                     <img src="https://idlegionoob.com/wp-content/uploads/2022/03/maxresdefaultwewqewq-1.jpg" class="w-full h-full object-cover" alt="">
                                     <div class="contentTitle absolute bottom-0 left-0 p-4">
-                                        <h1 class="font-mainFont text-white font-[500] text-md uppercase">Watch Now</h1>
+                                        <h1 class="font-mainFont text-white font-[500] text-sm hlow:text-[16px] uppercase">Watch Now</h1>
                                     </div>
                                 </div>
                             </div>
@@ -241,6 +241,12 @@
                 </div>
             </section>
             <!-- End My Games -->
+
+            <!-- Footer -->
+            <section class="footer mt-4">
+                <h1 class="text-center font-mainFont text-white font-[500] uppercase text-xs">© Nico Abel Laia | WeekGenz</h1>
+            </section>
+            <!-- End Footer -->
 
         </main>
 

@@ -15,6 +15,9 @@ $(document).ready(function(){
             autoplayHoverPause:false,
             animateOut: 'fadeOut',
             responsive:{
+                420:{
+                    items: 3
+                },
                 756:{
                     items: 4
                 },

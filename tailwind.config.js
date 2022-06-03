@@ -7,7 +7,11 @@ module.exports = {
         full: '100%',
       },
       screens: {
+        'slow' : '450px',
+        'mlow' : '615px',
+        'glow' : '630px',
         'low': '700px',
+        'hlow': '740px',
         'mid': '800px',
         'big': '1025px',
         'lx': '1150px',

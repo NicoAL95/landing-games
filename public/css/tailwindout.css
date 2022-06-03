@@ -561,24 +561,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
+.row-start-2 {
+  grid-row-start: 2;
 }
 
-.col-span-9 {
-  grid-column: span 9 / span 9;
+.row-start-1 {
+  grid-row-start: 1;
 }
 
 .mb-11 {
   margin-bottom: 2.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-2 {
@@ -607,6 +611,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -689,6 +697,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.grid-cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -705,10 +721,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -721,10 +733,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -783,9 +795,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.px-\[90px\] {
-  padding-left: 90px;
-  padding-right: 90px;
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .py-\[40px\] {
@@ -811,6 +823,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-\[180px\] {
   padding-left: 180px;
   padding-right: 180px;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pl-4 {
@@ -844,6 +861,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-\[700\] {
@@ -977,6 +999,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 450px) {
+  .slow\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .slow\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 615px) {
+  .mlow\:flex-row {
+    flex-direction: row;
+  }
+
+  .mlow\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .mlow\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 630px) {
+  .glow\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .glow\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .glow\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .glow\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .glow\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .glow\:px-\[90px\] {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
 @media (min-width: 700px) {
   .low\:absolute {
     position: absolute;
@@ -991,6 +1069,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 740px) {
+  .hlow\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .hlow\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (min-width: 800px) {
   .mid\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -998,6 +1087,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mid\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+}
+
+@media (min-width: 1025px) {
+  .big\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .big\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .big\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .big\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 }
 
